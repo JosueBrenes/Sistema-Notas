@@ -1,0 +1,202 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el header y el nav */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+nav input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+main {
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.note {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.note h2 {
+  margin-top: 0;
+}
+
+.note p {
+  margin-bottom: 10px;
+}
+
+.note small {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.message {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
+}
+
+.message.error {
+  background-color: #f44336;
+}
+
+/* Estilos para el formulario */
+form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilos para el formulario */
+form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form input[type="text"],
+form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilos para los botones del formulario */
+form button[type="submit"],
+form button[type="button"],
+form button#delete-note,
+form button#edit-note {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+form button#delete-note {
+  background-color: #f44336;
+}
+
+form button[type="submit"]:hover,
+form button[type="button"]:hover,
+form button#delete-note:hover,
+form button#edit-note:hover {
+  background-color: #45a049;
+}
+
+form button[type="submit"]:focus,
+form button[type="button"]:focus,
+form button#delete-note:focus,
+form button#edit-note:focus {
+  outline: none;
+}
+
+/* Estilo específico para el botón de editar */
+form button#edit-note {
+  background-color: #555;
+  color: white;
+}
+
+form button#edit-note:hover {
+  background-color: #777;
+}
+
+/* Alineación específica para botones editar y eliminar */
+form .edit-button-group {
+  text-align: center;
+}
+
+form .edit-button-group button {
+  margin: 0 5px;
+}
